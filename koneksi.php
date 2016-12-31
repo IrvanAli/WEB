@@ -1,9 +1,17 @@
 <?php
-$host = "localhost";	//nama host
-$user = "root";	//username phpMyAdmin
-$pass = "";	//password phpMyAdmin
-$name = "tutorial_crud";	//nama database
+$host = "localhost";
+$user = "root";
+$pass = "";
+$dbnm = "pw2";
 
-$koneksi = mysql_connect($host, $user, $pass) or die("Koneksi ke database gagal!");
-mysql_select_db($name, $koneksi) or die("Tidak ada database yang dipilih!");
+$conn = mysql_connect ($host, $user, $pass);
+if ($conn) {
+	$buka = mysql_select_db ($dbnm);
+	if (!$buka) {
+		die ("Database tidak dapat dibuka");	
+	}
+} else {
+	die ("Server MySQL tidak terhubung");	
+}
+
 ?>
