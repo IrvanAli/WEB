@@ -46,23 +46,21 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                <a href="index.php" onclick=$("#menu-close").click();>Home</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                <a href="index.php?page=input" onclick=$("#menu-close").click();>Input Data Pegawai</a>
             </li>
             <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
+                <a href="index.php?page=tampil" onclick=$("#menu-close").click();>Tampil Data Pegawai</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+                <a href="index.php?page=about" onclick=$("#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+                <a href="index.php?page=logout" onclick=$("#menu-close").click();>logout</a>
             </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
+           
         </ul>
     </nav>
 
@@ -74,16 +72,12 @@
             <br>
            <div id="main_container">
 <div id="header">
-<h1>Sistem Karyawan PT.Makmur</h1>
+<h1>Sistem Karyawan PT.Maju Terus</h1>
 </div>
-<div id="navigation">
-	<a href="index.php">Home</a> 
-	<a href="index.php?page=input">Input Data Pegawai</a> 
-	<a href="index.php?page=tampil">Tampil Data Pegawai</a> 
-	<a href="index.php?page=about">About</a> 
-	<a href="index.php?page=logout">logout</a> 
-</div>
+ 
 
+</div>
+<br><br>
 <?php
 $page = (isset($_GET['page']))? $_GET['page'] : "main";
 switch ($page) {
