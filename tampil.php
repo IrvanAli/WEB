@@ -15,8 +15,7 @@ include "koneksi.php";
 	</tr>
 	<?
 	$no = 1;
-	$query = "SELECT nip, nama, tgllahir, jenkel, alamat
-			  FROM pegawai ORDER BY nip";
+	$query = "SELECT nip, nama, tgllahir, jenkel, alamat FROM pegawai ORDER BY nip";
 	$sql = mysql_query ($query);
 	while ($hasil = mysql_fetch_array ($sql)) {
 		$nip = $hasil['nip'];
@@ -36,7 +35,6 @@ include "koneksi.php";
 			<td><?=$jenkel?></td>
 			<td><?=$alamat?></td>
 			<td>
-			<a href="index.php?page=foto&nip=<?=$nip?>">Foto</a><br/> 
 			<a href="index.php?page=edit&nip=<?=$nip?>">Edit</a><br/>
 			<a href="index.php?page=delete&nip=<?=$nip?>">Delete</a></td>
 		</tr>	
