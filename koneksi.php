@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbnm = "pw2";
+$dbnm = "pegawai";
 
 $conn = mysql_connect ($host, $user, $pass);
 if ($conn) {
