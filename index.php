@@ -114,8 +114,8 @@ default : include 'utama.php';
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <h4><strong>User</strong>
                     </h4>
                     <p>Nuruddin ILyas
                         <br>Armed kebonsari jember</p>
@@ -125,19 +125,42 @@ default : include 'utama.php';
                         </li>
                     </ul>
                     <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                </div>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <h4><strong>User</strong>
+                    </h4>
+                    <p>Irvan Ali Usman
+                        <br>Kreyongan Jember</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> 081219110117</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:irvanaliusman@gmail.com">irvanaliusman@gmail.com</a>
                         </li>
                     </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; My Website 2017</p>
+                    <br>
+                </div>
+               <div class="col-xs-6 col-sm-3 text-center">
+                    <h4><strong>User</strong>
+                    </h4>
+                    <p>Fitri Andayani
+                        <br>Kediri</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> 082299864234</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:fitriandayani0697@gmail.com">fitriandayani0697@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-xs-6 col-sm-3 text-center">
+                    <h4><strong>User</strong>
+                    </h4>
+                    <p>Yodion Wirawanda
+                        <br>Situbondo</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> 081914743357</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:yodionwanda@gmail.com">yodionwanda@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
                 </div>
             </div>
         </div>
