@@ -19,7 +19,7 @@
 	Email : <b><a href="fitriandayani0697@gmail.com">fitriandayani0697@gmail.com</a></b><br/>
 	</p>
 	<p>
-	Nim : <b>.......</b><br/>
+	Nim : <b>E31150547</b><br/>
 	Nama : <b>Yodion Wirawanda</b><br/>
 	Matakuliah : <b>Pemrograman Web 2</b><br/>
        	Email : <b><a href="yodionwanda@gmail.com">yodionwanda@gmail.com</a></b><br/>
