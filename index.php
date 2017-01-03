@@ -156,7 +156,7 @@ default : include 'utama.php';
                     <p>Yodion Wirawanda
                         <br>Situbondo</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> 081914743357</li>
+                        <li><i class="fa fa-phone fa-fw"></i> 081230843733</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:yodionwanda@gmail.com">yodionwanda@gmail.com</a>
                         </li>
                     </ul>
