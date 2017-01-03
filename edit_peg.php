@@ -7,7 +7,7 @@ if (isset($_GET['nip'])) {
 	die ("Error. No Nip Selected! ");	
 }
 
-$query = "SELECT nip, nama, tgllahir, jenkel, alamat, namafoto FROM pegawai WHERE nip='$nip'";
+$query = "SELECT nip, nama, tgllahir, jenkel, alamat FROM pegawai WHERE nip='$nip'";
 $sql = mysql_query ($query);
 $hasil = mysql_fetch_array ($sql);
 $nip = $hasil['nip'];
@@ -15,7 +15,6 @@ $nama = stripslashes ($hasil['nama']);
 $jenkel = $hasil['jenkel'];
 list($thn,$bln,$tgl) = explode ("-",$hasil['tgllahir']);
 $alamat = stripslashes ($hasil['alamat']);
-$namafoto = stripslashes ($hasil['namafoto']);
 
 //proses edit berita
 if (isset($_POST['Edit'])) {
@@ -24,14 +23,6 @@ if (isset($_POST['Edit'])) {
 	$tgllahir = $_POST['thn']."-".$_POST['bln']."-".$_POST['tgl'];
 	$jenkel = $_POST['jenkel'];
 	$alamat = addslashes (strip_tags ($_POST['alamat']));
-	$namafoto = $_FILES['foto']['name'];
-	if (strlen($namafoto)>0) {
-		//upload
-		if (is_uploaded_file($_FILES['foto']['tmp_name'])) {
-			move_uploaded_file ($_FILES['foto']['tmp_name'], "images/".$namafoto);
-			mysql_query ("UPDATE pegawai SET namafoto='$namafoto' WHERE nip='$nip'");
-		}
-	}
 	//update data
 	$query = "UPDATE pegawai SET nama='$nama',tgllahir='$tgllahir',jenkel='$jenkel',
 			  alamat='$alamat' WHERE nip='$nip'";
@@ -95,10 +86,6 @@ if (isset($_POST['Edit'])) {
 			<tr>
 				<td>Alamat</td>
 				<td>: <textarea name="alamat" cols="40" rows="5"><?=$alamat?></textarea></td>
-			</tr>
-			<tr>
-				<td>Foto</td>
-				<td>: <input type="file" name="foto"/> Foto: <?=$namafoto?></td>
 			</tr>
 			<tr>
 				<td>&nbsp;</td>
