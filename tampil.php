@@ -1,6 +1,10 @@
 <?php
 include "koneksi.php";
+
 ?>
+<a href="laporan.php" target="_blank" style="text-decoration: none;"><input type="button" name="tambah" value="cetak" class="btn.btn-succes"></a><p></p>
+=======
+    <a href="laporan.php" target="_blank" style="text-decoration: none;"><input type="button" name="tambah" value="cetak" class="btn.btn-succes"></a><p></p>
 <div id="content">
 	<h2>Data Pegawai</h2>
 	<table  id="tabel">
@@ -27,9 +31,9 @@ include "koneksi.php";
 		//
 		//tampilkan data pegawai
 	?>
-		<tr bgcolor="<?=$warna?>">
-			<td><?=$no?></td>
-			<td><?=$nip?></td>
+        <tr bgcolor="<?=$warna?>">
+            <td><?=$no?></td>
+            <td><?=$nip?></td>
 			<td><?=$nama?></td>
 			<td><?=$tgllhr?></td>
 			<td><?=$jenkel?></td>
