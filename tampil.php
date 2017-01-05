@@ -2,7 +2,14 @@
 include "koneksi.php";
 
 ?>
+<<<<<<< HEAD
 
+=======
+<form method="post" action="proses.php">
+	<input type="text" name="search" placeholder="cari disini">
+	<input type="submit" name="submit" value="search"">
+</form>
+>>>>>>> 573c37f2026d6138033b8eff3324e3d3509aa647
 <div id="content">
 	<h2>Data Pegawai</h2>
 	<table  id="tabel">
@@ -41,6 +48,7 @@ include "koneksi.php";
 			<a href="index.php?page=delete&nip=<?=$nip?>">Delete</a></td>
 		</tr>	
 	<? $no++; }?>
+	
 	</table>
 	<br>
 	<a href="laporan.php" target="_blank" style="text-decoration: none;"><input type="button" name="tambah" value="cetak" class="btn.btn-succes"></a><p></p>
