@@ -2,14 +2,10 @@
 include "koneksi.php";
 
 ?>
-<<<<<<< HEAD
-
-=======
 <form method="post" action="proses.php">
 	<input type="text" name="search" placeholder="cari disini">
 	<input type="submit" name="submit" value="search"">
 </form>
->>>>>>> 573c37f2026d6138033b8eff3324e3d3509aa647
 <div id="content">
 	<h2>Data Pegawai</h2>
 	<table  id="tabel">
