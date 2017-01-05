@@ -2,9 +2,7 @@
 include "koneksi.php";
 
 ?>
-<a href="laporan.php" target="_blank" style="text-decoration: none;"><input type="button" name="tambah" value="cetak" class="btn.btn-succes"></a><p></p>
-=======
-    <a href="laporan.php" target="_blank" style="text-decoration: none;"><input type="button" name="tambah" value="cetak" class="btn.btn-succes"></a><p></p>
+
 <div id="content">
 	<h2>Data Pegawai</h2>
 	<table  id="tabel">
@@ -44,4 +42,6 @@ include "koneksi.php";
 		</tr>	
 	<? $no++; }?>
 	</table>
+	<br>
+	<a href="laporan.php" target="_blank" style="text-decoration: none;"><input type="button" name="tambah" value="cetak" class="btn.btn-succes"></a><p></p>
 </div>
