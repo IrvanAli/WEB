@@ -30,22 +30,22 @@ $pdf->SetFont('Arial','B',10);
 $pdf->Cell(5,0.7,"Di cetak pada : ".date("d/m/Y"),0,0,'C');
 $pdf->ln(1);
 $pdf->SetFont('Arial','B',10);
-$pdf->Cell(1, 0.8, 'NO', 1, 0, 'C');
-$pdf->Cell(2, 0.8, 'NIP', 1, 0, 'C');
-$pdf->Cell(2, 0.8, 'Nama', 1, 0, 'C');
+$pdf->Cell(2, 0.8, 'NO', 1, 0, 'C');
+$pdf->Cell(3, 0.8, 'NIP', 1, 0, 'C');
+$pdf->Cell(6, 0.8, 'Nama', 1, 0, 'C');
 $pdf->Cell(3, 0.8, 'TglLahir', 1, 0, 'C');
 $pdf->Cell(3, 0.8, 'Jenis Kelamin', 1, 0, 'C');
-$pdf->Cell(4, 0.8, 'Alamat', 1, 1, 'C');
+$pdf->Cell(8, 0.8, 'Alamat', 1, 1, 'C');
 $pdf->SetFont('Arial','',10);
 $no=1;
 $query=mysql_query("select * from pegawai");
 while($lihat=mysql_fetch_array($query)){
-	$pdf->Cell(1, 0.8, $no , 1, 0, 'C');
-	$pdf->Cell(2, 0.8, $lihat['nip'], 1, 0,'C');
-	$pdf->Cell(2, 0.8, $lihat['nama'],1, 0, 'C');
+	$pdf->Cell(2, 0.8, $no , 1, 0, 'C');
+	$pdf->Cell(3, 0.8, $lihat['nip'], 1, 0,'C');
+	$pdf->Cell(6, 0.8, $lihat['nama'],1, 0, 'C');
 	$pdf->Cell(3, 0.8, $lihat['tgllahir'], 1, 0,'C');
 	$pdf->Cell(3, 0.8, $lihat['jenkel'],1, 0, 'C');
-	$pdf->Cell(4, 0.8, $lihat['alamat'], 1, 1,'C');
+	$pdf->Cell(8, 0.8, $lihat['alamat'], 1, 1,'C');
 
 	$no++;
 }
